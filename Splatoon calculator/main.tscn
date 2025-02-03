@@ -1,0 +1,178 @@
+[gd_scene load_steps=18 format=3 uid="uid://b0s1w7h0wdl5q"]
+
+[ext_resource type="Script" path="res://Main.gd" id="1_6x3fm"]
+[ext_resource type="Script" path="res://SubWeapon.gd" id="2_mmfrb"]
+[ext_resource type="Texture2D" uid="uid://cx7tkig4frla3" path="res://Splatoon icons/S3_Weapon_Sub_Angle_Shooter_Flat.png" id="3_2mcma"]
+[ext_resource type="Theme" uid="uid://cugeo3fe26ndv" path="res://Splatoon theme.tres" id="3_s41m2"]
+[ext_resource type="Texture2D" uid="uid://chp6to10a5p3s" path="res://Splatoon icons/S3_Weapon_Sub_Autobomb_Flat.png" id="4_2wm42"]
+[ext_resource type="Texture2D" uid="uid://r5rpo17cqqtf" path="res://Splatoon icons/S3_Weapon_Sub_Burst_Bomb_Flat.png" id="5_m2u47"]
+[ext_resource type="Texture2D" uid="uid://d4bvasqwdiamk" path="res://Splatoon icons/S3_Weapon_Sub_Curling_Bomb_Flat.png" id="6_fb6nb"]
+[ext_resource type="Texture2D" uid="uid://bcmyeyp5vxm3w" path="res://Splatoon icons/S3_Weapon_Sub_Fizzy_Bomb_Flat.png" id="7_n7po5"]
+[ext_resource type="Texture2D" uid="uid://dq41nxqepls1y" path="res://Splatoon icons/S3_Weapon_Sub_Ink_Mine_Flat.png" id="8_q8omt"]
+[ext_resource type="Texture2D" uid="uid://7rjbrcjxtlhb" path="res://Splatoon icons/S3_Weapon_Sub_Point_Sensor_Flat.png" id="9_8g7ga"]
+[ext_resource type="Texture2D" uid="uid://bx0dvhlhqm8hg" path="res://Splatoon icons/S3_Weapon_Sub_Splash_Wall_Flat.png" id="10_g6f66"]
+[ext_resource type="Texture2D" uid="uid://b83krovvmg5ck" path="res://Splatoon icons/S3_Weapon_Sub_Splat_Bomb_Flat.png" id="11_ydx3b"]
+[ext_resource type="Texture2D" uid="uid://d16n35wl6nu50" path="res://Splatoon icons/S3_Weapon_Sub_Sprinkler_Flat.png" id="12_71dqt"]
+[ext_resource type="Texture2D" uid="uid://bggbpqwveypvi" path="res://Splatoon icons/S3_Weapon_Sub_Squid_Beakon_Flat.png" id="13_0l6fe"]
+[ext_resource type="Texture2D" uid="uid://bast7esuk6hmj" path="res://Splatoon icons/S3_Weapon_Sub_Suction_Bomb_Flat.png" id="14_6siw6"]
+[ext_resource type="Texture2D" uid="uid://cyw3784au3jil" path="res://Splatoon icons/S3_Weapon_Sub_Torpedo_Flat.png" id="15_0qb80"]
+[ext_resource type="Texture2D" uid="uid://rcaq63ig3i41" path="res://Splatoon icons/S3_Weapon_Sub_Toxic_Mist_Flat.png" id="16_aeden"]
+
+[node name="Main" type="Node" node_paths=PackedStringArray("wepselect")]
+script = ExtResource("1_6x3fm")
+wepselect = NodePath("SubWeapons/SplatBomb")
+
+[node name="SubWeapons" type="Node" parent="."]
+
+[node name="AngleShooter" type="Node" parent="SubWeapons"]
+script = ExtResource("2_mmfrb")
+wepname = "Angle Shooter"
+inkcost = 40
+
+[node name="Autobomb" type="Node" parent="SubWeapons"]
+script = ExtResource("2_mmfrb")
+wepname = "Autobomb"
+inkcost = 55
+curvetype = 1
+
+[node name="Burst" type="Node" parent="SubWeapons"]
+script = ExtResource("2_mmfrb")
+wepname = "Burst Bomb"
+inkcost = 45
+curvetype = 4
+
+[node name="Curling" type="Node" parent="SubWeapons"]
+script = ExtResource("2_mmfrb")
+wepname = "Curling Bomb"
+inkcost = 65
+curvetype = 2
+
+[node name="Fizzy" type="Node" parent="SubWeapons"]
+script = ExtResource("2_mmfrb")
+wepname = "Fizzy Bomb"
+inkcost = 60
+curvetype = 1
+
+[node name="InkMine" type="Node" parent="SubWeapons"]
+script = ExtResource("2_mmfrb")
+wepname = "Ink Mine"
+inkcost = 60
+curvetype = 3
+
+[node name="PointSensor" type="Node" parent="SubWeapons"]
+script = ExtResource("2_mmfrb")
+wepname = "Point Sensor"
+inkcost = 45
+curvetype = 1
+
+[node name="SplashWall" type="Node" parent="SubWeapons"]
+script = ExtResource("2_mmfrb")
+wepname = "Splash Wall"
+inkcost = 60
+curvetype = 2
+
+[node name="SplatBomb" type="Node" parent="SubWeapons"]
+script = ExtResource("2_mmfrb")
+wepname = "Splat Bomb"
+inkcost = 70
+curvetype = 2
+
+[node name="Sprinkler" type="Node" parent="SubWeapons"]
+script = ExtResource("2_mmfrb")
+wepname = "Sprinkler"
+inkcost = 60
+curvetype = 3
+
+[node name="SquidBeakon" type="Node" parent="SubWeapons"]
+script = ExtResource("2_mmfrb")
+wepname = "Squid Beakon"
+inkcost = 75
+curvetype = 3
+
+[node name="SuctionBomb" type="Node" parent="SubWeapons"]
+script = ExtResource("2_mmfrb")
+wepname = "Suction Bomb"
+inkcost = 70
+curvetype = 2
+
+[node name="Torpedo" type="Node" parent="SubWeapons"]
+script = ExtResource("2_mmfrb")
+wepname = "Torpedo"
+inkcost = 65
+curvetype = 2
+
+[node name="ToxicMist" type="Node" parent="SubWeapons"]
+script = ExtResource("2_mmfrb")
+wepname = "Toxic Mist"
+inkcost = 60
+curvetype = 1
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="OptionButton" type="OptionButton" parent="Control"]
+layout_mode = 0
+offset_left = 123.0
+offset_top = 58.0
+offset_right = 409.0
+offset_bottom = 130.0
+theme = ExtResource("3_s41m2")
+item_count = 14
+popup/item_0/text = "Angle Shooter"
+popup/item_0/icon = ExtResource("3_2mcma")
+popup/item_1/text = "Autobomb"
+popup/item_1/icon = ExtResource("4_2wm42")
+popup/item_1/id = 1
+popup/item_2/text = "Burst Bomb"
+popup/item_2/icon = ExtResource("5_m2u47")
+popup/item_2/id = 2
+popup/item_3/text = "Curling Bomb"
+popup/item_3/icon = ExtResource("6_fb6nb")
+popup/item_3/id = 3
+popup/item_4/text = "Fizzy Bomb"
+popup/item_4/icon = ExtResource("7_n7po5")
+popup/item_4/id = 4
+popup/item_5/text = "Ink Mine"
+popup/item_5/icon = ExtResource("8_q8omt")
+popup/item_5/id = 5
+popup/item_6/text = "Point Sensor"
+popup/item_6/icon = ExtResource("9_8g7ga")
+popup/item_6/id = 6
+popup/item_7/text = "Splash Wall"
+popup/item_7/icon = ExtResource("10_g6f66")
+popup/item_7/id = 7
+popup/item_8/text = "Splat Bomb"
+popup/item_8/icon = ExtResource("11_ydx3b")
+popup/item_8/id = 8
+popup/item_9/text = "Sprikler"
+popup/item_9/icon = ExtResource("12_71dqt")
+popup/item_9/id = 9
+popup/item_10/text = "Squid Beakon"
+popup/item_10/icon = ExtResource("13_0l6fe")
+popup/item_10/id = 10
+popup/item_11/text = "Suction Bomb"
+popup/item_11/icon = ExtResource("14_6siw6")
+popup/item_11/id = 11
+popup/item_12/text = "Torpedo"
+popup/item_12/icon = ExtResource("15_0qb80")
+popup/item_12/id = 12
+popup/item_13/text = "Toxic Mist"
+popup/item_13/icon = ExtResource("16_aeden")
+popup/item_13/id = 13
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control"]
+layout_mode = 0
+offset_left = 499.0
+offset_top = 66.0
+offset_right = 1099.0
+offset_bottom = 417.0
+theme = ExtResource("3_s41m2")
+bbcode_enabled = true
+text = "Please select a sub weapon"
+fit_content = true
+scroll_active = false
+
+[connection signal="item_selected" from="Control/OptionButton" to="." method="_on_option_button_item_selected"]

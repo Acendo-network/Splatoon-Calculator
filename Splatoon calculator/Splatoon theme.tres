@@ -1,0 +1,6 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://cugeo3fe26ndv"]
+
+[ext_resource type="FontFile" uid="uid://bmpr0ol1mh1l3" path="res://Splatoon calculator/Splatoon fonts/Splatoon2.otf" id="1_feu6n"]
+
+[resource]
+default_font = ExtResource("1_feu6n")
